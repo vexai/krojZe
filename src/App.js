@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Nav from './Components/Nav';
+import Kroje from './Components/Kroje';
+import Mapa from './Components/Mapa';
+import Kontakt from './Components/Kontakt';
+import Krojze from './Components/Krojze';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Switch>
+      <Route path="/" exact strict component = {Krojze} />
+      <Route path ="/kroje" exact strict component={Kroje} />
+      <Route path ="/mapa" exact strict component={Mapa} />
+      <Route path ="/kontakt" exact strict component={Kontakt} />
+      </Switch>
     </div>
+    </Router>
   );
 }
 
