@@ -1,10 +1,7 @@
 import React, {useState} from 'react';
 import '../App.scss';
 import styles from './Kroje_fonty.module.scss'
-import img from '../Imgs/lato.jpg';
 import {useSpring, useSprings, animated} from 'react-spring';
-import {Spring} from 'react-spring/renderprops'
-console.log(styles);
 
 function Kroje_fonty(props) {
 
@@ -30,7 +27,7 @@ function Kroje_fonty(props) {
                 <div className="container__fonts-boxes">
                     <p className="font-place">{ props.place }</p>
                 </div>
-                <div className="container__fonts-boxes">
+                <div className="container__fonts-plusminus">
                     <animated.div className={ isBlack ? styles.minus : styles.plusminus } style={coloring} 
                         onClick={() => {setColor(!color); setBlack(!isBlack); setToggle(!toggle)}}>
                     </animated.div>
@@ -39,18 +36,15 @@ function Kroje_fonty(props) {
         </div>
         <div  className="container">
             <animated.div style={fadeout} className="container__img-desc">
-        <img src={ img } alt=""/>
-                
+                <img src={ props.imgUrl } alt=""/>
                 <div className="container__desc">
                 <animated.p style={growFont}>{ props.description }</animated.p></div>
             </animated.div>   
         </div>  
-        <animated.a style={display} href="#">Pobierz plik z krojem pisma</animated.a>
+        <animated.a className="container__download" style={display} href="#">Pobierz plik z krojem pisma</animated.a>
         <animated.form style={display}>
             <input type="text" placeholder="Wypróbuj krój pisma..." className={props.className}/>
         </animated.form>      
-
-
       </div>
       
     );

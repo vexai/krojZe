@@ -1,16 +1,137 @@
 body {
-    padding-left: 15%;;
-    padding-right: 15%;
+  padding-left: 15% !important;
+  padding-right: 15% !important;
 }
 ul {
     padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.relative {
+  position: relative;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 10vh;
+    min-height: 0;
+    position: relative;
+    z-index: 99;
+  }
+
+  .blue {
+    color: navy;
+  }
+
+  .section{
+    text-align: center !important;
+    padding-left: 15%;
+    padding-right: 15%;
+   }
+
+   .section1__text {
+    color: #c00;
+    font-size: 40px;
+    font-weight: bolder;
+  }
+
+  .section1__padding-text {
+    padding-top: 15%;
+  }
+
+  .section2 {
+    margin-left: -22% !important;
+    margin-right: -22% !important;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 30px 0 30px;
+    border-color: #ffffff transparent transparent transparent;
+    display: block;
+    margin: auto;
+  }
+
+  
+
+  .section2__font1 {
+    font-family: 'Gill Sans', 
+    'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .section2__font2 {
+    font-family: cursive;
+    font-weight: lighter;
+    font-style: italic;
+  }
+
+  .section2__font3 {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: line-through;
+  }
+
+  .section2__font4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+  }
+
+  .section3__text {
+    color: navy;
+    font-size: 40px;
+    font-weight: bolder;
+  }
+  .red {
+    color: #c00;
+  }
+
+  h5 {
+    font-size: 5em;
+    color: #c00;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+
+  .fp-viewing-1-0 {
+    .section2__text {
+      animation: fadein 2s ease-in;
+      font-size: 5em;
+      margin-block-start: 0em;
+    margin-block-end: 0em;
+    }   
+  }
+  
+  @keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+   .section1__footer {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     color: navy;
+   }
+
+   .section1__short-line {
+     width: 7rem;
+     height: 1px;
+     background-color: navy;
+   }
+
+   .block {
+     display: block;
+     padding-top: 10%;
+   }
+
+   .section1__font-name {
+    
+   }
+
+   .section1__font-place{
+    
   }
   
   .navbar__links {
@@ -46,6 +167,14 @@ nav {
   height: 10rem;
   width: 22rem;
 }
+
+.container__fonts-plusminus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  width: 22rem;
+}
   
   .container__title {
       width: 100%;
@@ -75,8 +204,10 @@ nav {
     outline: none;
   }
 
-  a {
-    padding-top: 1rem;
+  .a-zero {
+    a {
+      height: 0 !important;
+    }
   }
   
   .input__font1 {
@@ -95,7 +226,6 @@ nav {
   .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
   
   .container__img-desc{
@@ -108,7 +238,11 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-top: -16px;
+  }
+
+  .container__download {
+    display: block;
   }
   
   img {
@@ -116,6 +250,7 @@ nav {
     width: 47rem; //proporcja 1.57 height ustalone w const fadeout(Kroje_fonty)
     margin-right: 3rem;
   }
+
 
   .font-name {
       font-weight: bold;
@@ -142,9 +277,15 @@ nav {
     height: 85%;
   }
 
-  a {
-    margin-top: -3rem;
+  .container__download {
+    margin-top: -3rem
   }
+
+  
+}
+
+.section1__padding-text {
+  padding-top: 8%;
 }
 
 @media (max-width: 1330px) {
@@ -154,9 +295,14 @@ nav {
     height: 75%;
   }
 
-  a {
+  .container__download {
     margin-top: -6rem;
   }
+
+  .section1__padding-text {
+    padding-top: 5%;
+  }
+
 
   .container__desc {
     align-items: stretch;
