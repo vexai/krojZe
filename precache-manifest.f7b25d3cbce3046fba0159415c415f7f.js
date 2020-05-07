@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "58458eebc8b42bc88a67f5b3e5b93d22",
+    "revision": "52799e97550691b1dacbc4fdc69c1b9b",
     "url": "/krojZe/index.html"
   },
   {
-    "revision": "5ab2fe0c191d0cef6615",
-    "url": "/krojZe/static/css/main.ac91bf8b.chunk.css"
+    "revision": "764c7bdc77d894a8e1a7",
+    "url": "/krojZe/static/css/main.7c68b552.chunk.css"
   },
   {
     "revision": "17c9f2b9caa9d3b56980",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/krojZe/static/js/2.b753bc2f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5ab2fe0c191d0cef6615",
+    "revision": "764c7bdc77d894a8e1a7",
     "url": "/krojZe/static/js/main.d5fa2afc.chunk.js"
   },
   {

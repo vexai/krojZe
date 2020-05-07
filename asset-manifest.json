@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/krojZe/static/css/main.ac91bf8b.chunk.css",
+    "main.css": "/krojZe/static/css/main.7c68b552.chunk.css",
     "main.js": "/krojZe/static/js/main.d5fa2afc.chunk.js",
     "main.js.map": "/krojZe/static/js/main.d5fa2afc.chunk.js.map",
     "runtime-main.js": "/krojZe/static/js/runtime-main.cb6d10ed.js",
@@ -8,16 +8,16 @@
     "static/js/2.b753bc2f.chunk.js": "/krojZe/static/js/2.b753bc2f.chunk.js",
     "static/js/2.b753bc2f.chunk.js.map": "/krojZe/static/js/2.b753bc2f.chunk.js.map",
     "index.html": "/krojZe/index.html",
-    "precache-manifest.289c7dda5f6ef97a12757b4160474b55.js": "/krojZe/precache-manifest.289c7dda5f6ef97a12757b4160474b55.js",
+    "precache-manifest.f7b25d3cbce3046fba0159415c415f7f.js": "/krojZe/precache-manifest.f7b25d3cbce3046fba0159415c415f7f.js",
     "service-worker.js": "/krojZe/service-worker.js",
-    "static/css/main.ac91bf8b.chunk.css.map": "/krojZe/static/css/main.ac91bf8b.chunk.css.map",
+    "static/css/main.7c68b552.chunk.css.map": "/krojZe/static/css/main.7c68b552.chunk.css.map",
     "static/js/2.b753bc2f.chunk.js.LICENSE.txt": "/krojZe/static/js/2.b753bc2f.chunk.js.LICENSE.txt",
     "static/media/lato.jpg": "/krojZe/static/media/lato.e07c00b6.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.cb6d10ed.js",
     "static/js/2.b753bc2f.chunk.js",
-    "static/css/main.ac91bf8b.chunk.css",
+    "static/css/main.7c68b552.chunk.css",
     "static/js/main.d5fa2afc.chunk.js"
   ]
 }
