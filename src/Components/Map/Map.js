@@ -27,10 +27,10 @@ const Map = ({places, fetchPlaces, selectedId}) => {
               attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          {Object.keys(places).map(key => <PlaceMarker lat={places[key].lat}
+          {Object.keys(places).map((key,index) => <PlaceMarker lat={places[key].lat}
                                                        lng={places[key].lng} title={places[key].title}
                                                        imageUrl={places[key].imageUrl}
-                                                       id={key}
+                                                       id={index}
                                                        open={selectedId === key}
                                                        description={places[key].description}/>)}
         </LeafletMap>

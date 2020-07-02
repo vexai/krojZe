@@ -19,7 +19,8 @@ L.Icon.Default.mergeOptions({
 const MarkerForm = ({addPlace}) => {
   const [selectedOption, setSelectedOption] = useState('');
   const [options, setOptions] = useState([]);
-  const [query, setQuery] = useState([]);
+  const [query, setQuery] = useState('');
+  const [queryInput, setQueryInput] = useState('');
   const [description, setDescription] = useState('');
   const [title, setTitle] = useState('');
   const [error, setError] = useState('');
@@ -49,11 +50,12 @@ const MarkerForm = ({addPlace}) => {
 
   const handleOptionSelect = option => {
     setSelectedOption(option);
+    setQueryInput(option.label);
     setOptions([]);
   }
 
-  const handleSearchAddress = debounce(text => {
-    setQuery(text)
+  const handleSearchAddress = debounce(() => {
+    setQuery(queryInput)
   }, 1000);
 
   useEffect(() => {
@@ -61,8 +63,6 @@ const MarkerForm = ({addPlace}) => {
       }
       , [selectedOption, description, title]
   );
-
-
 
   const handleSubmit = async () =>{
 
@@ -79,7 +79,7 @@ const MarkerForm = ({addPlace}) => {
       <div>
         <div style={{fontSize: '50px'}}>{error}</div>
         <div>Wyszukaj adres i wybierz z listy</div>
-        <input onChange={e => handleSearchAddress(e.target.value)} type={'text'}/>
+        <input value={queryInput} onKeyUpCapture={handleSearchAddress} onChange={e => setQueryInput(e.target.value)} type={'text'}/>
         {options.map(option => <div style={{cursor: 'pointer', lineHeight: '60px'}} onClick={() => handleOptionSelect(option)}>{option.label}</div>)}
         <div>tytuł</div>
         <input onChange={e => setTitle(e.target.value)} type={'text'}/>

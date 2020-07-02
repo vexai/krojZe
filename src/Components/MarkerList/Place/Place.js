@@ -8,7 +8,7 @@ const Place = ({title,imageUrl, description,id, onClick}) => {
   return (
       <div onMouseEnter={()=>setHover(true)}
            onMouseLeave={()=>setHover(false)}
-      style={hover ? {backgroundColor: '#AAC9FF', cursor: 'pointer'} : null}
+           style={hover ? {backgroundColor: '#AAC9FF', cursor: 'pointer'} : null}
            onClick={()=>onClick(id)}
       >
         <img style={{width: '200px'}} src={imageUrl} />
