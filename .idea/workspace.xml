@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="88e4122a-cae9-4f1e-9670-d35fc82c14c6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1dhD4aYDvd5gYtKmU5TjQwe3LQ0" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="88e4122a-cae9-4f1e-9670-d35fc82c14c6" name="Default Changelist" comment="" />
+      <created>1592868241624</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592868241624</updated>
+      <workItem from="1592868248401" duration="220000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="420" y="283" key="Github.ShareDialog" timestamp="1592868376270">
+      <screen x="0" y="23" width="1280" height="720" />
+    </state>
+    <state x="420" y="283" key="Github.ShareDialog/0.23.1280.720/-359.-1057.1920.1057@0.23.1280.720" timestamp="1592868376270" />
+    <state x="317" y="215" key="com.intellij.ide.util.TipDialog" timestamp="1592868247217">
+      <screen x="0" y="23" width="1280" height="720" />
+    </state>
+    <state x="317" y="215" key="com.intellij.ide.util.TipDialog/0.23.1280.720/-359.-1057.1920.1057@0.23.1280.720" timestamp="1592868247217" />
+    <state x="478" y="181" key="svn.repositoryBrowser" timestamp="1592868430807">
+      <screen x="0" y="23" width="1280" height="720" />
+    </state>
+    <state x="478" y="181" key="svn.repositoryBrowser/0.23.1280.720/-359.-1057.1920.1057@0.23.1280.720" timestamp="1592868430807" />
+  </component>
+</project>

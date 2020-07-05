@@ -1,0 +1,53 @@
+
+
+ .minus {
+  background-color: none;
+  right: 40px;
+  top: 40px;
+  width: 40px;
+  height: 40px;
+ }
+
+ .minus:hover {
+   cursor: pointer;
+ }
+
+ .minus::after {
+  position: absolute;
+  left: 18px;
+  content: ' ';
+  height: 40px;
+  width: 6px;
+  background-color: #c00;
+ }
+
+ .plusminus {
+  width: 40px;
+  height: 40px;
+}
+.plusminus:hover {
+  cursor: pointer;
+}
+.plusminus:before, .plusminus:after {
+  position: absolute;
+  left: 18px;
+  content: ' ';
+  height: 40px;
+  width: 6px;
+  background-color: navy;
+}
+.plusminus:before {
+  transform: rotate(0deg);
+}
+.plusminus:after {
+  transform: rotate(90deg);
+}
+
+
+
+
+
+ 
+
+ 
+

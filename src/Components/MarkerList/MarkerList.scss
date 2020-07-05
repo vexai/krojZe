@@ -1,0 +1,32 @@
+.marker-list__pagination {
+  display: grid;
+  grid-template-columns: repeat(4,200px);
+  grid-gap: 100px;
+  justify-content: center;
+}
+.blockblock {
+ display: block;
+ width: 20px;
+ height: 20px;
+ background-color:  #ff0000;
+}
+
+.marker-list__loadMoreBtn {
+  display: block;
+  margin: auto;
+  background: none;
+  color: navy;
+  border: none;
+  font-size: 30px;
+}
+
+.marker-list__loadMoreBtn:hover {
+  text-decoration: line-through;
+  color: #ff0000;
+  cursor: pointer;
+}
+
+.marker-list__loadMoreBtn:focus {
+  border: none;
+  outline: none;
+}
