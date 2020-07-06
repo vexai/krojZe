@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import MarkerListStyle from "./MarkerList.scss";
 
+import { NavLink } from "react-router-dom";
+
 import Place from "./Place";
 
 const MarkerList = ({ places, onSelect }) => {
@@ -36,6 +38,35 @@ const MarkerList = ({ places, onSelect }) => {
           Zobacz więcej!
         </button>
       )}
+      <footer>
+        <div className="footer__grid1">
+          <div className="footer__title">Krój_że</div>
+          <div className="footer__short-line"></div>
+          <NavLink className="footer__link" exact to="/kontakt">
+            Kontakt
+          </NavLink>
+          <NavLink className="footer__link" exact to="/">
+            O projekcie
+          </NavLink>
+        </div>
+        <div className="footer__grid2">
+          <div className="footer__title">Kroje</div>
+          <div className="footer__short-line"></div>
+          <NavLink className="footer__link" exact to="/kroje">
+            Pobierz
+          </NavLink>
+        </div>
+        <div className="footer__grid3">
+          <div className="footer__title">Mapa</div>
+          <div className="footer__short-line"></div>
+          <NavLink className="footer__link" exact to="/mapa">
+            Archiwum
+          </NavLink>
+          <NavLink className="footer__link" exact to="/mapa">
+            Dodaj zdjęcie
+          </NavLink>
+        </div>
+      </footer>
     </>
   );
 };

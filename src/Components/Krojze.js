@@ -20,7 +20,7 @@ function Krojze(props, fullpage_api) {
   return (
     <ReactFullpage
       scrollOverflow={true}
-      sectionsColor={["#fff", "#f1986e", "#fff", "red", "blue"]}
+      sectionsColor={["#fff", "#f0d0c4", "#f9f9f9", "white"]}
       verticalCentered={true}
       navigation={true}
       render={({ state, fullpageApi }) => {
@@ -57,7 +57,7 @@ function Krojze(props, fullpage_api) {
                     <NavLink exact to="/kroje" className="section1__link">
                       <p>Sukiennice</p>
                     </NavLink>
-                    <p>Rynek Główny</p>
+                    <p className="">Rynek Główny</p>
                   </div>
                   <div className="section1__short-line short-line__grid3">
                     <NavLink exact to="/kroje" className="section1__link">
@@ -130,10 +130,36 @@ function Krojze(props, fullpage_api) {
             </div>
 
             <div className="section fp-auto-height">
-              <div style={{ minHeight: "10em" }}>
-                ltricies tristique nulla aliquet enim tortor at auctor.Feugiat in fermentum posuere
-                urna ristique nulla aliquet, sed do eiusmod tempor incididunt ut abore et dolore
-                magna aliqua.Ultricies tristique nulla aliquet enim tortor at auctor.
+              <div style={{ minHeight: "13em" }}>
+                <footer>
+                  <div className="footer__grid1">
+                    <div className="footer__title">Krój_że</div>
+                    <div className="footer__short-line"></div>
+                    <NavLink className="footer__link" exact to="/kontakt">
+                      Kontakt
+                    </NavLink>
+                    <NavLink className="footer__link" exact to="/">
+                      O projekcie
+                    </NavLink>
+                  </div>
+                  <div className="footer__grid2">
+                    <div className="footer__title">Kroje</div>
+                    <div className="footer__short-line"></div>
+                    <NavLink className="footer__link" exact to="/kroje">
+                      Pobierz
+                    </NavLink>
+                  </div>
+                  <div className="footer__grid3">
+                    <div className="footer__title">Mapa</div>
+                    <div className="footer__short-line"></div>
+                    <NavLink className="footer__link" exact to="/mapa">
+                      Archiwum
+                    </NavLink>
+                    <NavLink className="footer__link" exact to="/mapa">
+                      Dodaj zdjęcie
+                    </NavLink>
+                  </div>
+                </footer>
               </div>
             </div>
           </div>

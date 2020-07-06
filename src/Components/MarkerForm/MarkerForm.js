@@ -106,6 +106,21 @@ const MarkerForm = ({ addPlace }) => {
 
   return (
     <>
+      <button onClick={showModal}>MODAL</button>
+      <div id="backdrop" onClick={closeModalHandler}></div>
+      <div className="modal card" id="add-modal">
+        <div class="modal__content">
+          <div className="modal__text">
+            <h4>Dziękujemy za wysłanie zdjęcia.</h4>
+            <p>Jeżeli spełnia warunki to wkrótce zobaczysz je na mapie!</p>
+          </div>
+          <img className="modal__img" src={TypoJpg} />
+          <button className="modal__close-btn" onClick={closeModalHandler}>
+            Zamknij
+          </button>
+        </div>
+      </div>
+
       <div className="map__form map__marker-form">
         <div className="map__form-header">{error}</div>
         <input
@@ -158,20 +173,6 @@ const MarkerForm = ({ addPlace }) => {
           }}
           type={"submit"}
         />
-      </div>
-      <button onClick={showModal}>MODAL</button>
-      <div id="backdrop" onClick={closeModalHandler}></div>
-      <div className="modal card" id="add-modal">
-        <div class="modal__content">
-          <div className="modal__text">
-            <h4>Dziękujemy za wysłanie zdjęcia.</h4>
-            <p>Jeżeli spełnia warunki to wkrótce zobaczysz je na mapie!</p>
-          </div>
-          <img className="modal__img" src={TypoJpg} />
-          <button className="modal__close-btn" onClick={closeModalHandler}>
-            Zamknij
-          </button>
-        </div>
       </div>
     </>
   );
