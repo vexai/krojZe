@@ -22,7 +22,7 @@ function Nav() {
             to="/kroje"
           >
             <li>
-              <h4 className="navbar__link-fontWeight">Kroje</h4>
+              <h4 className="navbar__link-fontWeight">KROJE</h4>
             </li>
           </NavLink>
 
@@ -32,7 +32,7 @@ function Nav() {
             to="/mapa"
           >
             <li>
-              <h4 className="navbar__link-fontWeight">Mapa</h4>
+              <h4 className="navbar__link-fontWeight">MAPA</h4>
             </li>
           </NavLink>
 
@@ -42,7 +42,7 @@ function Nav() {
             to="/kontakt"
           >
             <li>
-              <h4 className="navbar__link-fontWeight">Kontakt</h4>
+              <h4 className="navbar__link-fontWeight">KONTAKT</h4>
             </li>
           </NavLink>
         </main>

@@ -15,19 +15,18 @@ function Krojze(props, fullpage_api) {
   };
 
   const [readMore, setReadMore] = useState(false);
-  const growReadMore = useSpring({ fontSize: readMore ? "16px" : "0px" });
+  const growReadMore = useSpring({ display: readMore ? "block" : "none" });
 
   return (
     <ReactFullpage
       scrollOverflow={true}
-      sectionsColor={["#fff", "#f0d0c4", "#f9f9f9", "white"]}
+      sectionsColor={["#f9f9f9", "#f0d0c4", "#f9f9f9", "white"]}
       verticalCentered={true}
-      navigation={true}
       render={({ state, fullpageApi }) => {
         const reRender = () => {
           setTimeout(function () {
             fullpageApi.reBuild();
-          }, 1000);
+          }, 500);
         };
 
         return (
@@ -57,7 +56,7 @@ function Krojze(props, fullpage_api) {
                     <NavLink exact to="/kroje" className="section1__link">
                       <p>Sukiennice</p>
                     </NavLink>
-                    <p className="">Rynek Główny</p>
+                    <p>Rynek Główny</p>
                   </div>
                   <div className="section1__short-line short-line__grid3">
                     <NavLink exact to="/kroje" className="section1__link">
@@ -84,7 +83,7 @@ function Krojze(props, fullpage_api) {
             <div className="section fp-auto-height-responsive">
               <main>
                 <div className="section3__grid-text">
-                  <h1 className="section3__text">
+                  <h3 className="section3__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.
                     <span className="red">
@@ -92,18 +91,10 @@ function Krojze(props, fullpage_api) {
                     </span>{" "}
                     Feugiat in fermentum posuere urna ristique nulla aliquet, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.
-                  </h1>
+                  </h3>
                 </div>
               </main>
-              <button
-                className="section3__button"
-                onClick={() => {
-                  setReadMore(!readMore);
-                  reRender();
-                }}
-              >
-                {readMore ? "MNIEJ" : "CZYTAJ WIĘCEJ"}
-              </button>
+
               <main>
                 <animated.div style={growReadMore} className="section3__readMore-text">
                   Ultricies tristique nulla aliquet enim tortor at auctor.Feugiat in fermentum
@@ -124,9 +115,18 @@ function Krojze(props, fullpage_api) {
                   auctor.Feugiat in fermentum posuere urna ristique nulla aliquet, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua.Ultricies tristique nulla
                   aliquet enim tortor at auctor.Feugiat in fermentum posuere urna ristique nulla
-                  aliquet, sed do eiusmod tempor incididunt ut
+                  aliquet, sed do eiusmod tempor incididunt ut!!!!
                 </animated.div>
               </main>
+              <button
+                className="section3__button"
+                onClick={() => {
+                  setReadMore(!readMore);
+                  reRender();
+                }}
+              >
+                {readMore ? "Mniej" : "Czytaj więcej"}
+              </button>
             </div>
 
             <div className="section fp-auto-height">

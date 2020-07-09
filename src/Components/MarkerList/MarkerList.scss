@@ -27,6 +27,11 @@
   cursor: pointer;
 }
 
+.marker-list__loadMoreBtn:hover::before,
+.marker-list__loadMoreBtn:hover::after {
+  content: "\00a0\00a0";
+}
+
 .popup__font {
   font-family: "Montserrat", sans-serif;
 }
