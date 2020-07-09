@@ -36,7 +36,7 @@ const ContactForm = ({}) => {
             />
 
             {errors.email && (
-              <span style={{ position: "absolute", zIndex: "99" }}>Podaj adres email!</span>
+              <span className="contact-form__error">Podaj adres email!</span>
             )}
 
             <textarea
@@ -47,7 +47,7 @@ const ContactForm = ({}) => {
             />
 
             {errors.message && (
-              <span style={{ position: "absolute", zIndex: "99" }}>Podaj treść wiadomości!</span>
+              <span className="contact-form__error">Podaj treść wiadomości!</span>
             )}
 
             <input className="contact-form__submit" type="submit" value="WYŚLIJ" />

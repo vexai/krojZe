@@ -2,6 +2,7 @@ import React from "react";
 import "../App.scss";
 import Kroje_fonty from "./Kroje_fonty/Kroje_fonty";
 import lato from "../Imgs/lato.jpg";
+import wanda from "../Imgs/wanda.jpg";
 import { NavLink } from "react-router-dom";
 
 function Kroje() {
@@ -63,7 +64,7 @@ function Kroje() {
         name="Wanda"
         place="Kino Wanda"
         className="input__font3"
-        imgUrl={lato}
+        imgUrl={wanda}
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
         labore et dolore magna aliqua. Ultricies tristique nulla aliquet enim tortor at auctor. Feugiat 
         in fermentum posuere urna. Odio ut sem nulla pharetra diam sit amet nisl. Nascetur ridiculus mus m

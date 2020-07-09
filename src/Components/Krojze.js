@@ -15,7 +15,7 @@ function Krojze(props, fullpage_api) {
   };
 
   const [readMore, setReadMore] = useState(false);
-  const growReadMore = useSpring({ fontSize: readMore ? "30px" : "0px" });
+  const growReadMore = useSpring({ fontSize: readMore ? "16px" : "0px" });
 
   return (
     <ReactFullpage
@@ -24,7 +24,7 @@ function Krojze(props, fullpage_api) {
       verticalCentered={true}
       navigation={true}
       render={({ state, fullpageApi }) => {
-        const rerender = () => {
+        const reRender = () => {
           setTimeout(function () {
             fullpageApi.reBuild();
           }, 1000);
@@ -99,7 +99,7 @@ function Krojze(props, fullpage_api) {
                 className="section3__button"
                 onClick={() => {
                   setReadMore(!readMore);
-                  rerender();
+                  reRender();
                 }}
               >
                 {readMore ? "MNIEJ" : "CZYTAJ WIĘCEJ"}

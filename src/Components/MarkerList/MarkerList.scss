@@ -1,7 +1,7 @@
 .marker-list__pagination {
   display: grid;
   grid-template-columns: repeat(4, 200px);
-  grid-gap: 100px;
+  grid-gap: 50px;
   justify-content: center;
 }
 .blockblock {
@@ -16,7 +16,7 @@
   margin: auto;
   margin-top: 35px;
   background: none;
-  color: navy;
+  color: #004e98;
   border: none;
   font-size: 30px;
 }
@@ -25,6 +25,10 @@
   text-decoration: line-through;
   color: #f83b15;
   cursor: pointer;
+}
+
+.popup__font {
+  font-family: "Montserrat", sans-serif;
 }
 
 .marker-list__loadMoreBtn:focus {

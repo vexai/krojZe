@@ -30,10 +30,9 @@ const PlaceMarker = ({ lat, lng, id, title, description, imageUrl, open, onClose
   return (
     <Marker key={id} position={[lng, lat]} draggable={false} opacity={1}>
       {
-        <Popup>
-          {title}
-          <div style={{ color: "red" }}>{title}</div>
-          <div style={{ color: "green" }}>{description}</div>
+        <Popup className="popup__font">
+          <div style={{ color: "#f83b15" }}>{title}</div>
+          <div style={{ color: "#004e98" }}>{description}</div>
           <img src={imageUrl} style={{ width: "200px" }} />
         </Popup>
       }
