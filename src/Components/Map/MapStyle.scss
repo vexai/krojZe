@@ -1,3 +1,7 @@
+.leaflet-popup-content-wrapper {
+  border-radius: 0 !important;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -7,45 +11,45 @@ main {
 
 .map__grid {
   grid-column: 1/13;
+  margin-bottom: 90px;
 }
 
 .map__header {
   color: #004e98;
   text-align: center;
-  font-size: 32px;
+  font-size: 26px;
+  margin-top: 35px;
   font-weight: 700;
 }
 .map__header-text {
   color: #004e98;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
-  padding-top: 20px;
 }
 
 .map__form {
   margin: 50px auto;
   height: 420px;
-  width: 500px;
-  background-color: #f9f9f9;
+  width: 980px;
 }
 
 .map__form-header {
   padding-top: 35px;
   color: #004e98;
   font-size: 20px;
-  font-weight: 300px;
+  font-weight: 600;
   text-align: center;
 }
 
 .map__marker-form {
   input {
-    align-items: center;
-    justify-content: center;
-    width: 70%;
+    width: 50%;
     height: 2rem;
     padding-bottom: 0rem;
-    border: none;
+    border: 1px solid #004e98;
+    padding-left: 7px;
+    font-family: "Montserrat", sans-serif;
   }
   input:focus {
     outline-width: 1px;
@@ -55,23 +59,32 @@ main {
 
 .map__form-inputs {
   display: block;
-  width: 300px;
   margin: auto;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 .map__form-autocomplete {
   position: absolute;
+  margin: auto;
   z-index: 99;
   overflow: auto;
-  width: 500px;
-  max-height: 300px;
+  width: 50%;
+  left: 25%;
+  max-height: 290px;
   border-radius: 3px;
+  box-shadow: 0px 5px 10px gray;
 }
 
 .form-autocomplete__single {
   background-color: #004e98;
   color: #ffffff;
+  cursor: pointer;
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+.form-autocomplete__single:hover {
+  background-color: #f83b15;
 }
 
 .map__form-choose {
@@ -83,8 +96,7 @@ main {
 .map__form-choose-btn {
   display: block;
   color: #004e98;
-  margin-left: 30%;
-  margin-top: 1rem;
+  margin-left: 40%;
 }
 
 .map__form-submit-btn:disabled {
@@ -92,7 +104,7 @@ main {
   color: #ffffff;
   background-color: lightgrey;
   margin: auto;
-  margin-top: 5px;
+  margin-top: 25px;
 }
 
 .map__form-submit-btn:enabled {
@@ -100,8 +112,38 @@ main {
   color: #ffffff;
   background-color: #004e98;
   margin: auto;
-  margin-top: 5px;
+  margin-top: 25px;
   cursor: pointer;
+}
+
+#button__choose {
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 60px;
+  border-radius: 7px;
+  color: #004e98;
+  margin-top: 30px;
+}
+
+#button__choose:hover {
+  cursor: pointer;
+  color: #f83b15;
+}
+
+#button__choose:focus {
+  outline: none;
+}
+
+#input__choose {
+  display: none;
+}
+
+#span-text__choose {
+  color: #004e98;
+  font-size: 13px;
+  position: relative;
+  bottom: 10px;
 }
 
 #backdrop {
@@ -151,15 +193,16 @@ main {
 }
 
 .card {
-  background: #ffffff;
-  border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
 .modal {
+  background-image: url("../MarkerForm/lato2.jpg");
+  background-size: cover;
   position: fixed;
   z-index: 100;
-  width: 50%;
+  width: 51%;
+  height: 420px;
   top: 15vh;
   left: 25%;
   display: none;
@@ -168,10 +211,10 @@ main {
 .modal__close-btn {
   display: block;
   font: inherit;
-  color: #ffffff;
-  background-color: #004e98;
+  color: #004e98;
+  background-color: #ffffff;
   margin: auto;
-  margin-top: 35px;
+  margin-top: 20px;
   width: 200px;
   height: 2rem;
   margin-bottom: 35px;
@@ -181,10 +224,16 @@ main {
 }
 
 .modal__text {
+  margin-top: 250px;
   text-align: center;
-  color: #004e98;
+  color: #ffffff;
 }
 
 .modal__img {
   width: 100%;
+  filter: grayscale(100%);
+}
+
+#mapImg {
+  cursor: pointer;
 }

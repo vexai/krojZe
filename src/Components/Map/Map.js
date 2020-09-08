@@ -26,13 +26,14 @@ const Map = ({ places, fetchPlaces, selectedId }) => {
 
   return (
     <>
+      <div id="map"></div>
       <h2 className="map__header">Wyszukaj miejsce</h2>
       <h3 className="map__header-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
       </h3>
       <main>
         <div className="map__grid">
-          <LeafletMap center={position} zoom={13} style={{ height: "450px", marginTop: "40px" }}>
+          <LeafletMap center={position} zoom={13} style={{ height: "450px", marginTop: "20px" }}>
             <TileLayer
               attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
               url="https://api.mapbox.com/styles/v1/vexai/ckbqygsmd5dqd1iqacyx5z3sj/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoidmV4YWkiLCJhIjoiY2ticGw1bGNyMmRoMjJ6cHZ3Nzl6cXB1NiJ9.MRRnlvggO6ncUeiY4uIQ1A"

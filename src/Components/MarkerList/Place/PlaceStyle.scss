@@ -1,3 +1,15 @@
 .place__title-desc {
-    text-align: center;
+  text-align: center;
+  color: #004e98;
+  padding-top: 10px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.place__img-box {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  display: flex;
+  border-radius: 2px;
 }

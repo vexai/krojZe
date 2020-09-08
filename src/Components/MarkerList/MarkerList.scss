@@ -1,24 +1,31 @@
+.g {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 50px;
+}
+
+.gg {
+  grid-column: 3/12;
+}
+
 .marker-list__pagination {
   display: grid;
   grid-template-columns: repeat(4, 200px);
-  grid-gap: 50px;
+  grid-gap: 59px;
   justify-content: center;
-}
-.blockblock {
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-color: #f83b15;
 }
 
 .marker-list__loadMoreBtn {
-  display: block;
-  margin: auto;
-  margin-top: 35px;
-  background: none;
-  color: #004e98;
+  background-color: transparent;
   border: none;
-  font-size: 30px;
+  color: #004e98;
+  font-size: 24px;
+  margin: auto;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  display: block;
+  font-weight: bold;
 }
 
 .marker-list__loadMoreBtn:hover {
@@ -34,6 +41,7 @@
 
 .popup__font {
   font-family: "Montserrat", sans-serif;
+  line-height: 18px;
 }
 
 .marker-list__loadMoreBtn:focus {

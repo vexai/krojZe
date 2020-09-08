@@ -35,9 +35,7 @@ const ContactForm = ({}) => {
               ref={register({ required: true, pattern })}
             />
 
-            {errors.email && (
-              <span className="contact-form__error">Podaj adres email!</span>
-            )}
+            {errors.email && <span className="contact-form__error">Podaj adres email!</span>}
 
             <textarea
               placeholder="Wpisz treść wiadomości..."
@@ -46,15 +44,14 @@ const ContactForm = ({}) => {
               ref={register({ required: true })}
             />
 
-            {errors.message && (
-              <span className="contact-form__error">Podaj treść wiadomości!</span>
-            )}
+            {errors.message && <span className="contact-form__error">Podaj treść wiadomości!</span>}
 
             <input className="contact-form__submit" type="submit" value="WYŚLIJ" />
           </form>
         </div>
         <img className="contact-form__img" src={contactFormImg} />
       </div>
+
       <footer>
         <div className="footer__grid1">
           <div className="footer__title">Krój_że</div>

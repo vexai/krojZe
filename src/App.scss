@@ -82,63 +82,56 @@ main {
 
 .section1__grid-text {
   grid-column: 4/10;
-  margin-top: -10rem;
+  margin-bottom: 3rem;
 }
 
 .section1__footer {
-  color: #004e98;
-  margin-top: 3rem;
-  font-size: 13px;
-  padding-top: 0.5em;
-
-  p {
-    display: block;
-    margin-block-start: 1.1em;
-    margin-block-end: 0.5em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-  }
+  margin-top: 35px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
 }
 
-a:-webkit-any-link {
-  color: #004e98;
+.section1__grid1 {
+  grid-column: 3/5;
+}
+
+.section1__grid2 {
+  grid-column: 8/10;
+}
+
+.section1__grid3 {
+  grid-column: 10/13;
 }
 
 .section1__short-line {
-  display: block;
-  width: 7rem;
-  height: 1px;
+  width: 95px;
+  height: 2px;
   background-color: #004e98;
 }
 
 .section1__link {
-  font-weight: bold;
-  text-decoration: none;
-  list-style: none;
-}
-
-.short-line__grid1 {
-  grid-column: 3/4;
-}
-
-.short-line__grid2 {
-  grid-column: 6/8;
-}
-
-.short-line__grid3 {
-  grid-column: 10/11;
-}
-.section2 {
-}
-
-.triangle {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 50px 30px 0 30px;
-  border-color: #ffffff transparent transparent transparent;
   display: block;
-  margin: auto;
+  cursor: pointer;
+  font-size: 13px;
+  color: #004e98;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.section1__under-link {
+  display: block;
+  font-size: 13px;
+  color: #004e98;
+  margin-top: 13px;
+  text-decoration: none;
+}
+
+.section1__title {
+  cursor: pointer;
+  font-weight: bold;
 }
 
 h5 {
@@ -260,16 +253,18 @@ h5 {
   grid-column: 10/11;
   display: flex;
   align-items: center;
+  background: none;
+  border: none;
 }
 
 .font-name {
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #004e98;
   grid-column: 3/5;
 }
 .font-place {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #004e98;
   grid-column: 6/9;
 }
@@ -305,20 +300,24 @@ h5 {
   font-family: "Times New Roman", Times, serif;
   border: none;
   grid-column: 3/11;
+  margin-top: 7px;
 }
 .input__font2 {
   font-family: fantasy;
   border: none;
   grid-column: 3/11;
+  margin-top: 7px;
 }
 .input__font3 {
   font-family: "Courier New", Courier, monospace;
   border: none;
   grid-column: 3/11;
+  margin-top: 7px;
 }
 
 .container__title {
-  padding-top: 1em;
+  font-size: 14px;
+  padding-top: 2.5em;
   color: #004e98;
 }
 
@@ -338,6 +337,47 @@ h5 {
 
 .container__download {
   display: block;
+}
+
+#fp-nav ul li:hover a.active span,
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span {
+  height: 40px !important;
+  width: 2px !important;
+  margin: -12px 0 0 -5.5px !important;
+  background-color: #004e98 !important;
+  border-radius: 0px !important;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  border-radius: 0 !important;
+  height: 15px !important;
+  width: 2px !important;
+}
+
+#fp-nav ul li,
+.fp-slidesNav ul li {
+  margin: 15px !important;
+  height: 35px !important;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  margin: 0px 0 0 -5.5px !important;
+  background-color: #004e98 !important;
+}
+
+#fp-nav {
+  top: 47% !important;
+}
+
+.section2__video {
+  position: fixed;
+  top: 30%;
+  width: 100%;
+  overflow: hidden;
 }
 
 // RWB RWB RWB RWB RWB RWB RWB RWB RWB RWB RWB RWB
@@ -360,50 +400,4 @@ h5 {
   .block {
     padding-top: 10%;
   }
-}
-
-footer {
-  margin-top: 35px;
-  margin-bottom: 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-gap: 10px;
-}
-
-.footer__grid1 {
-  grid-column: 3/5;
-}
-
-.footer__grid2 {
-  grid-column: 6/8;
-}
-
-.footer__grid3 {
-  grid-column: 10/13;
-}
-
-.footer__short-line {
-  width: 10px;
-  height: 2px;
-  background-color: #004e98;
-  margin-bottom: 15px;
-}
-
-.footer__link {
-  display: block;
-  cursor: pointer;
-  font-size: 13px;
-  color: #004e98;
-  margin-top: 15px;
-  text-decoration: none;
-}
-
-.footer__title {
-  display: block;
-  cursor: pointer;
-  font-size: 13px;
-  color: #004e98;
-  margin-bottom: 10px;
-  font-weight: bold;
 }

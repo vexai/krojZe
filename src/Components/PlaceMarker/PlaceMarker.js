@@ -1,17 +1,9 @@
 import React, { useEffect } from "react";
-import { Marker, Popup } from "react-leaflet";
+import { LayersControl, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
+import "./PlaceMarkerStyle.scss";
 
 delete L.Icon.Default.prototype._getIconUrl;
-
-// L.Icon.Default.prototype.options.imagePath = "../Imgs/red-marker.png";
-
-// let myIcon = new L.icon({
-//   iconUrl: require("red-marker.png"),
-//   iconSize: [38, 95],
-//   shadowSize: [68, 95],
-// });
-// L.Marker.prototype.options.icon = myIcon;
 
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: require("leaflet/dist/images/layers.png"),
@@ -28,15 +20,40 @@ const PlaceMarker = ({ lat, lng, id, title, description, imageUrl, open, onClose
   }, [open]);
 
   return (
-    <Marker key={id} position={[lng, lat]} draggable={false} opacity={1}>
-      {
-        <Popup className="popup__font">
-          <div style={{ color: "#f83b15" }}>{title}</div>
-          <div style={{ color: "#004e98" }}>{description}</div>
-          <img src={imageUrl} style={{ width: "200px" }} />
-        </Popup>
-      }
-    </Marker>
+    <>
+      <div
+        id="backdropM"
+        onClick={() => {
+          const a = document.getElementsByClassName("modalM");
+          const b = document.getElementById("backdropM");
+          for (let i = 0; i < a.length; i++) {
+            a[i].classList.remove("visible");
+          }
+          b.classList.remove("visible");
+        }}
+      ></div>
+      <div className="modalM">
+        <img className="modal__mapImg" src={imageUrl} alt="imgs" />
+      </div>
+      <Marker key={id} position={[lng, lat]} draggable={false} opacity={1}>
+        {
+          <Popup className="popup__font">
+            <div style={{ color: "#004e98", fontWeight: "bold" }}>{title}</div>
+            <div style={{ color: "#004e98", marginBottom: "10px" }}>{description}</div>
+            <div
+              onClick={() => {
+                const a = document.getElementsByClassName("modalM")[id];
+                const b = document.getElementById("backdropM");
+                a.classList.add("visible");
+                b.classList.add("visible");
+              }}
+            >
+              <img id="mapImg" src={imageUrl} style={{ width: "200px" }} alt="imgs" />
+            </div>
+          </Popup>
+        }
+      </Marker>
+    </>
   );
 };
 
