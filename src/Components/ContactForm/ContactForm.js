@@ -20,9 +20,9 @@ const ContactForm = ({}) => {
 
   return (
     <>
-      <h2 className="contact-form__header">Krój_że</h2>
+      <h2 className="contact-form__header">Napisz do nas</h2>
       <h3 className="contact-form__header-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        Podziel się swoją opinią! Czekamy na Twoją wiadomość.
       </h3>
       <div className="contact-form">
         <div className="contact-form__form">

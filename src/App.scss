@@ -83,6 +83,7 @@ main {
 .section1__grid-text {
   grid-column: 4/10;
   margin-bottom: 3rem;
+  hyphens: auto;
 }
 
 .section1__footer {
@@ -188,6 +189,7 @@ h5 {
   color: #004e98;
   font-size: 24px;
   font-weight: bolder;
+  hyphens: auto;
 }
 .red {
   color: #f83b15;
@@ -223,6 +225,7 @@ h5 {
   font-size: 24px;
   font-weight: bold;
   color: #004e98;
+  hyphens: auto;
 }
 
 @keyframes fadein {

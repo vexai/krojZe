@@ -27,9 +27,9 @@ const Map = ({ places, fetchPlaces, selectedId }) => {
   return (
     <>
       <div id="map"></div>
-      <h2 className="map__header">Wyszukaj miejsce</h2>
+      <h2 className="map__header">WYSZUKAJ MIEJSCE</h2>
       <h3 className="map__header-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        Zainspiruj się typografią zastaną
       </h3>
       <main>
         <div className="map__grid">

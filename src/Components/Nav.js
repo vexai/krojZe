@@ -1,21 +1,23 @@
 import React from "react";
 import "../App.scss";
 import { NavLink } from "react-router-dom";
+import logo from "../Imgs/logo.png";
 
 function Nav() {
+
   return (
     <nav className="nav__a-zero">
       <ul className="navbar__links">
         <main>
           <NavLink
             className="navbar__link navbar__grid1"
-            activeClassName="navbar__link--active"
+            // activeClassName="navbar__link--active"
             exact
             to="/"
           >
-            <h3 className="navbar__link-fontWeight">krój_że</h3>
+            {/* <h3 className="navbar__link-fontWeight">krój_że</h3> */}
+            <img style={{width: '100px', marginTop: '10px'}} src={logo} alt="logo"/>
           </NavLink>
-
           <NavLink
             className="navbar__link navbar__grid2"
             activeClassName="navbar__link--active"

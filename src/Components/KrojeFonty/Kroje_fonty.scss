@@ -18,7 +18,6 @@
 
 .con__img {
   grid-column: 3/8;
-  filter: grayscale(100%);
 }
 
 .con__img--on {
@@ -35,8 +34,10 @@
 }
 
 .con__download {
-  grid-column: 3/6;
+  grid-column: 8/11;
   color: #004e98;
-  margin-top: 9px;
-  font-size: 12px;
+  margin-top: -10px;
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: bold;
 }

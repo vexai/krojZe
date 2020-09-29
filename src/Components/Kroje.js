@@ -5,6 +5,7 @@ import recepcja from "../Imgs/recepcja.jpg";
 import wanda from "../Imgs/wanda.jpg";
 import herby from "../Imgs/herby.jpeg";
 import { NavLink } from "react-router-dom";
+import logo from "../Imgs/logo.png";
 
 function Kroje() {
   return (
@@ -22,7 +23,6 @@ function Kroje() {
           </div>
         </main>
       </div>
-
       <main>
         <div className="container__line"></div>
       </main>
@@ -33,13 +33,12 @@ function Kroje() {
         place="Hotel Forum"
         className="input__font2"
         imgUrl={recepcja}
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-        labore et dolore magna aliqua. Ultricies tristique nulla aliquet enim tortor at auctor. Feugiat 
-        in fermentum posuere urna. Odio ut sem nulla pharetra diam sit amet nisl. Nascetur ridiculus mus m
-        auris vitae ultricies. Cursus mattis molestie a iaculis at erat. Donec pretium vulputate sapien nec. 
-        Non sodales neque sodales ut etiam sit. Tristique risus nec feugiat in fermentum posuere urna nec. At
-         volutpat diam ut venenatis. Eget nulla facilisi etiam dignissim. Sed viverra tellus in hac habitasse 
-         platea. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet."
+        description="RECEPCJA to napis zlokalizowany pierwotnie w Motelu Krak, a obecnie umieszczony w Hotelu Forum w Krakowie.
+         Sam hotel położony nad brzegiem Wisły został zamknięty w 2002 roku po ponad 13 latach funkcjonowania.
+          Był to jeden z najważniejszych budynków zrealizowanych w Krakowie przez Janusza Ingardena. Projekt        
+        budynku powstał w latach 1973-1977 i miał być najbardziej nowoczesnym i jednocześnie luksusowym miejscem 
+        na mapie Polski. Po zakończeniu działalności hotelowej, Forum zyskało drugie życie jako szeroko pojęty ośrodek kultury. 
+        Usytuowano w nim m.in. bar, nad którym zawieszono właśnie neon z napisem RECEPCJA."
       />
 
       <main>
@@ -52,13 +51,9 @@ function Kroje() {
         place="Kino Wanda"
         className="input__font3"
         imgUrl={wanda}
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-        labore et dolore magna aliqua. Ultricies tristique nulla aliquet enim tortor at auctor. Feugiat 
-        in fermentum posuere urna. Odio ut sem nulla pharetra diam sit amet nisl. Nascetur ridiculus mus m
-        auris vitae ultricies. Cursus mattis molestie a iaculis at erat. Donec pretium vulputate sapien nec. 
-        Non sodales neque sodales ut etiam sit. Tristique risus nec feugiat in fermentum posuere urna nec. At
-         volutpat diam ut venenatis. Eget nulla facilisi etiam dignissim. Sed viverra tellus in hac habitasse 
-         platea. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet."
+        description="Krój pisma Wanda wzorowany na unikatowym neonie dawnego kina Wanda usytuowanego przy ulicy Św.
+        Gertrudy, który został zaprojektowany przez Samuela Manbera ok. 1912 roku, tylko kilka tygodni wcześniej niż
+        kino ”Uciecha”. Rolę ośrodka kultury pełniło przez blisko 90 lat."
       />
 
       <main>
@@ -72,13 +67,9 @@ function Kroje() {
         place="Rynek Główny"
         className="input__font1"
         imgUrl={herby}
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-        labore et dolore magna aliqua. Ultricies tristique nulla aliquet enim tortor at auctor. Feugiat 
-        in fermentum posuere urna. Odio ut sem nulla pharetra diam sit amet nisl. Nascetur ridiculus mus m
-        auris vitae ultricies. Cursus mattis molestie a iaculis at erat. Donec pretium vulputate sapien nec. 
-        Non sodales neque sodales ut etiam sit. Tristique risus nec feugiat in fermentum posuere urna nec. At
-         volutpat diam ut venenatis. Eget nulla facilisi etiam dignissim. Sed viverra tellus in hac habitasse 
-         platea. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet."
+        description="Krój pisma Wanda wzorowany na unikatowym neonie dawnego kina Wanda usytuowanego przy ulicy Św.
+        Gertrudy, który został zaprojektowany przez Samuela Manbera ok. 1912 roku, tylko kilka tygodni wcześniej niż
+        kino ,,Uciecha”. Rolę ośrodka kultury pełniło przez blisko 90 lat."
       />
 
       <main>

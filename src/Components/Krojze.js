@@ -30,12 +30,15 @@ function Krojze(props, fullpage_api) {
               <main>
                 <div className="section1__grid-text">
                   <h1 className="section1__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.{" "}
                     <span className="blue">
-                      Ultricies tristique nulla aliquet enim tortor at auctor.
-                    </span>{" "}
-                    Feugiat in fermentum posuere urna ristique nulla aliquet.
+                    Krój_że{" "}
+                    </span>
+                    pozwala znaleźć ciekawe przykłady nadające się do wykorzystania w profesjonalnej pracy, między
+                    innymi do projektowania fontów.{" "}
+                    <span className="blue">
+                    Można zainspirować się typografią oraz stworzyć nowy krój wpisujący
+                    się w kanon współczesndej typografii.
+                    </span>
                   </h1>
                 </div>
               </main>
@@ -82,43 +85,35 @@ function Krojze(props, fullpage_api) {
                 <source src={bgVideo} type="video/mp4"></source>
               </video>
             </div>
+            
 
             <div className="section fp-auto-height-responsive">
               <main>
                 <div className="section3__grid-text">
                   <h3 className="section3__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
+                  W katalogu Biblioteki Głównej Akademii Sztuk Pięknych w Krakowie pod hasłem typograa wernakularna nie
+                  odnajdujemy zbyt wielu informacji.{" "}
                     <span className="red">
-                      Ultricies tristique nulla aliquet enim tortor at auctor.
+                    Sam termin "wernakularny” oznacza zarówno nieprofesjonalny, czy rodzimy, 
+                    oraz lokalny, związany z daną społecznością i do niej przynależny, wyrastający z jej cech swoistych, będący
+                    nośnikiem jej kulturowej odrębności.
                     </span>{" "}
-                    Feugiat in fermentum posuere urna ristique nulla aliquet, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
                   </h3>
                 </div>
               </main>
 
               <main>
                 <animated.div style={growReadMore} className="section3__readMore-text">
-                  Ultricies tristique nulla aliquet enim tortor at auctor.Feugiat in fermentum
-                  posuere urna ristique nulla aliquet, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.Ultricies tristique nulla aliquet enim tortor at
-                  auctor.Feugiat in fermentum posuere urna ristique nulla aliquet, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.Ultricies tristique nulla
-                  aliquet enim tortor at auctor.Feugiat in fermentum posuere urna ristique nulla
-                  aliquet, sed do eiusmod tempor incididunt ut labore iquet, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua.Ultricies tristique nulla aliquet enim
-                  tortor at auctor.Feugiat in fermentum posuere urna ristique nulla aliquet, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.Ultricies tristique
-                  nulla aliquet enim tortor at auctor.Feugiat in fermentum posuere urna ristique
-                  nulla aliquet, sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.Ultricies tristique nulla aliquet enim tortor at auctor.Feugiat in
-                  fermentum posuere urna ristique nulla aliquet, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua.Ultricies tristique nulla aliquet enim tortor at
-                  auctor.Feugiat in fermentum posuere urna ristique nulla aliquet, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.Ultricies tristique nulla
-                  aliquet enim tortor at auctor.Feugiat in fermentum posuere urna ristique nulla
-                  aliquet, sed do eiusmod tempor incididunt ut!!!!
+                W wielu przypadkach są to dzieła anonimowe i/lub zbiorowe. Termin ten
+                można odnieść do wielu szyldów i napisów, które napotykamy na ulicy. Przymiotnik "wernakularny” jako
+                pierwszy zastosował architekt Gilbert Scott w 1856 roku odnosząc się do architektury tworzonej techniką
+                regionalną. Jednak historia kultury wernakularnej rozpoczęła się znacznie wcześniej. W epoce renesansowej
+                obok kultury tworzonej na bazie tradycji łacińskiej powstaje kultura opierająca się na regionalizmach. Przejawia
+                 się ona nie tylko w architekturze. Obecnie jej domeną jest przede wszystkim kultura popularna, zwłaszcza
+                ta tworzona z wykorzystaniem nowych mediów. W projektowaniu gracznym termin "wernakularny” był do
+                niedawna synonimem bezguścia, z którym projektanci próbowali na różne sposoby walczyć. Obecnie w gronie
+                specjalistów można zaobserwować dwa stanowiska w kwestii wernakularyzmu: jedni uważają go za źródło
+                inspiracji, drudzy za dość przypadkowy twór wykonany ręką niewykształconego amatora.
                 </animated.div>
               </main>
               <button
