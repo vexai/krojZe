@@ -287,35 +287,51 @@ h5 {
 
 .container__input {
   input {
-    font-size: 3rem;
+    font-size: 2rem;
     width: 100%;
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
   input:focus {
     outline-width: 0px;
-    font-size: 3rem;
+    font-size: 2rem;
     outline: none;
   }
 }
+@font-face {
+  font-family: 'RECEPCJA';
+  src: local('RECEPCJA'), url(./Fonts/RECEPCJA.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'HERBY';
+  src: local('HERBY'), url(./Fonts/Herby_v4.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'WANDA';
+  src: local('WANDA'), url(./Fonts/Wanda-Regular.otf) format('opentype');
+}
 
 .input__font1 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'HERBY';
   border: none;
   grid-column: 3/11;
   margin-top: 7px;
 }
+
 .input__font2 {
-  font-family: fantasy;
+  font-family: 'RECEPCJA';
   border: none;
   grid-column: 3/11;
   margin-top: 7px;
 }
 .input__font3 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'WANDA';
   border: none;
   grid-column: 3/11;
   margin-top: 7px;
+  font-variant-ligatures: discretionary-ligatures;
 }
 
 .container__title {

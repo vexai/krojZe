@@ -67,9 +67,12 @@ function Kroje() {
         place="Rynek Główny"
         className="input__font1"
         imgUrl={herby}
-        description="Krój pisma Wanda wzorowany na unikatowym neonie dawnego kina Wanda usytuowanego przy ulicy Św.
-        Gertrudy, który został zaprojektowany przez Samuela Manbera ok. 1912 roku, tylko kilka tygodni wcześniej niż
-        kino ,,Uciecha”. Rolę ośrodka kultury pełniło przez blisko 90 lat."
+        description="To przede wszystkim dwuelementowa antykwa szeryfowa z niewielkim kontrastem pomiędzy pionami i poziomami. 
+        Ten typ liternictwa odnajdujemy m.in. pod przedstawieniami herbów w Sukiennicach. Przez wiele lat bryła architektoniczna 
+        tej ulokowanej na Rynku Głównym budowli przyjmowała najróżniejsze kształty. Ostatniej istotnej przebudowy dokonano pod 
+        koniec XIX wieku według projektu Tomasza Prylińskiego. W rezultacie parter budynku przekształcony został w ciąg kramów 
+        przeznaczonych na użytek handlowy. Dobudowano także ryzality, 
+        na szczycie których umieszczono maszkarony. Hala została ozdobiona ok. 1895 roku herbami miast."
       />
 
       <main>

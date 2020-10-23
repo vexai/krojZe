@@ -8,8 +8,10 @@
     font-size: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    height: auto;
   }
   input:focus {
+    height: auto;
     outline-width: 0px;
     font-size: 2rem;
     outline: none;
