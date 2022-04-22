@@ -12,7 +12,7 @@
     "axios": "^0.19.2",
     "connect": "^3.7.0",
     "firebase": "^7.14.6",
-    "fullpage.js": "^3.0.8",
+    "fullpage.js": "^4.0.5",
     "gh-pages": "^2.2.0",
     "jquery": "^3.5.1",
     "leaflet": "^1.6.0",
